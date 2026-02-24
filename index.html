@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Kittuu Baby ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+padding:0;
+font-family:cursive;
+text-align:center;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4);
+overflow-x:hidden;
+color:#fff;
+}
+.page{display:none;padding:40px;animation:fade 1s;}
+.active{display:block;}
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:20px;
+background:#ff4b5c;
+color:white;
+cursor:pointer;
+margin:10px;
+}
+img{width:220px;border-radius:20px;margin:10px;}
+@keyframes fade{from{opacity:0;}to{opacity:1;}}
+
+.heart{
+position:fixed;
+bottom:-10px;
+color:red;
+font-size:20px;
+animation:float 5s linear infinite;
+}
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="page active" id="page1">
+<h1>Happy Birthday Kittuu Baby 🎂❤️</h1>
+<p>Bahut zyada pyaar aane wala hai 😜</p>
+<button onclick="nextPage(2)">Start Baby 💌</button>
+</div>
+
+<div class="page" id="page2">
+<h1>Truth Time 😜</h1>
+<p>Tu handsome bhi hai… thoda bandar bhi 🐵</p>
+<button onclick="nextPage(3)">Next ➡️</button>
+</div>
+
+<div class="page" id="page3">
+<h1>Why I Love You 💖</h1>
+<p>You are my happiness 😌</p>
+<button onclick="nextPage(4)">Next ➡️</button>
+</div>
+
+<div class="page" id="page4">
+<h1>Our Memories 📸</h1>
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<button onclick="nextPage(5)">Next ➡️</button>
+</div>
+
+<div class="page" id="page5">
+<h1>More Memories 💕</h1>
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<button onclick="nextPage(6)">Next ➡️</button>
+</div>
+
+<div class="page" id="page6">
+<h1>Memory Lane ✨</h1>
+<p>From strangers to forever ❤️</p>
+<button onclick="nextPage(7)">Next ➡️</button>
+</div>
+
+<div class="page" id="page7">
+<h1>Birthday Wish 🎉</h1>
+<p>Stay happy always 💖</p>
+<button onclick="nextPage(8)">Final Surprise 🔐</button>
+</div>
+
+<div class="page" id="page8">
+<h1>Enter Final Password 🔐</h1>
+<input type="password" id="pass" placeholder="Enter password">
+<br><br>
+<button onclick="checkPassword()">Unlock ❤️</button>
+</div>
+
+<div class="page" id="page9">
+<h1>I Love You So Much Kittuu Baby ❤️</h1>
+<p>Happy Birthday My Forever Person 💍✨</p>
+</div>
+
+<script>
+
+/* ENTRY PASSWORD */
+window.onload=function(){
+let
