@@ -105,5 +105,22 @@ animation:float 5s linear infinite;
 <p>Happy Birthday My Forever Person 💍✨</p>
 </div>
 
-<script>
   
+  <script>
+function nextPage(num){
+let pages=document.querySelectorAll('.page');
+pages.forEach(p=>p.classList.remove('active'));
+document.getElementById('page'+num).classList.add('active');
+}
+
+function checkPassword(){
+let password=document.getElementById("pass").value;
+if(password==="finalbaby"){
+nextPage(9);
+}else{
+alert("Wrong Final Password 😜");
+}
+}
+</script>
+  
+
